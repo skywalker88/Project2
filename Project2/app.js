@@ -34,6 +34,6 @@ function increment() {
         console.log(i = i % 9999999999 + 1);
     }
     else {
-        setTimeout(function () { debugger; }, 2000);
+        throw new Error('This is not an error. This is just to abort javascript');
     }
 }
